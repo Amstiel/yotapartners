@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>YotaPartners</title>
+    <link rel="icon" href="favicon.ico">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAOBORrCFwkkIAbujYFe62laMTYeaWvCvM",
+    authDomain: "yotapartners-4c3ef.firebaseapp.com",
+    databaseURL: "https://yotapartners-4c3ef.firebaseio.com",
+    storageBucket: "",
+    messagingSenderId: "809443472791"
+  };
+  firebase.initializeApp(config);
+</script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <h1>YotaPartners</h1>
+        <select id="currentUser" onchange="selectChange(this)">
+            <option value="akunitskiy">Выберите сотрудника</option>
+            <option value="edurnova">Екатерина Дурнова</option>
+        </select>
+    </header>
+    <div id="map"><div class="cssload-loader" >Загрузка</div></div>
+    <div id="info">
+        <div class="header info-header">
+            <i class="fa fa-times icon" id="close-icon"></i>
+            <h1 id="info-name">lorem ipsum</h1>
+        </div>
+        <div class="info-header worker-header">
+            <p>Сотрудник:</p>
+            <p id="workerName">Иван Иванов</p>
+        </div>
+        <div class="info-header code-header">
+            <p>Код точки:</p>
+            <p id="codeOfPoint">ВЛД12345</p>
+        </div>
+        <div class="photo-header header info-header">
+            <i class="fa fa-sort-asc icon" id="photo-toggle" aria-hidden="true"></i>
+            <h1 id="info-name">Фото</h1>
+        </div>
+        <div class="photo-container">
+            <div class="photo photo-1">Фото-1</div>
+            <div class="photo photo-2">Фото-2</div>
+        </div>
+        <div class="header info-header">
+            <h1 id="info-name">Комментарии</h1>
+        </div>
+        <div class="comment-section">
+            <div class="comment"><div class="comment-date">23.10.2016</div>Функциональность комментариев будет добавлена</div>
+            <div class="comment"><div class="comment-date">23.10.2016</div>Скоро</div>
+            <div class="comment"><div class="comment-date">23.10.2016</div>Честно-честно</div>
+            <div class="comment"><div class="comment-date">23.10.2016</div>Вот вам комментарий с большим колличество символом, дабы протестировать, как размер блока увеличивается с ростом числа символов. А он и правда увеличивается, вот как :)</div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
