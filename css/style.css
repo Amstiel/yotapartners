@@ -1,11 +1,11 @@
 @font-face{
     font-family: YotaSans;
-    src: url(../../fonts/TheSansYota-W5Plain.otf);
+    src: url(../fonts/TheSansYota-W5Plain.otf);
 }
 
 @font-face{
     font-family: YotaSerif;
-    src: url(../../fonts/TheSerifYota-W5Plain.otf);
+    src: url(../fonts/TheSerifYota-W5Plain.otf);
 }
 
 h1{
@@ -20,7 +20,7 @@ header > div{
     margin: 0px 5px 15px 10px;
     width: 66px;
     height: 87px;
-    background-image: url(../../img/YOTA_logo_H130px.png);
+    background-image: url(../img/YOTA_logo_H130px.png);
     background-size: cover;
 }
 
